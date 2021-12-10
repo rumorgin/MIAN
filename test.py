@@ -11,7 +11,6 @@ import tqdm
 import time
 
 PRETRAIN_DIR='E:\\fewshot\\DeepEMD-master\\deepemd_pretrain_model\\' #'deepemd_pretrain_model/'
-# DATA_DIR='/home/zhangchi/dataset'
 DATA_DIR='E:\\fewshot\\DeepEMD-master\\datasets' #'C:/Users/Kuroko/Desktop/New_Model/datasets'
 
 parser = argparse.ArgumentParser()

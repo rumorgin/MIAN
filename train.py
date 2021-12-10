@@ -11,7 +11,6 @@ import tqdm
 import time
 
 PRETRAIN_DIR='/share/qinzhili/new_structure/deepemd_pretrain_model/' #'deepemd_pretrain_model/'
-# DATA_DIR='/home/zhangchi/dataset'
 DATA_DIR='/share/qinzhili/New_Model/datasets' #'C:/Users/Kuroko/Desktop/New_Model/datasets'
 
 parser = argparse.ArgumentParser()
@@ -67,7 +66,7 @@ num_gpu = set_gpu(args)
 Dataset=set_up_datasets(args)
 
 # model
-# args.pretrain_dir=osp.join(args.pretrain_dir,'%s/resnet12/max_acc.pth'%(args.dataset))
+# remember to adjust this path if have changed the hyper-parameters of pretrain, important
 args.pretrain_dir='/share/qinzhili/final_model/checkpoint/pre_train/%s/48-0.0500-30-0.20/max_acc.pth'%(args.dataset)
 model = Proto(args)
 model = load_model(model, args.pretrain_dir)

@@ -14,7 +14,6 @@ from Models.utils import *
 from Models.dataloader.data_utils import *
 
 DATA_DIR='/share/qinzhili/New_Model/datasets'
-# DATA_DIR='/home/zhangchi/dataset'
 
 parser = argparse.ArgumentParser()
 # about dataset and network
